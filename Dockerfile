@@ -7,3 +7,8 @@ RUN apt-get install unixodbc unixodbc-dev -y
 RUN apt-get update
 
 RUN echo "$PWD"
+
+COPY ./FabFit /FabFit/
+COPY ./requirements.txt /FabFit/
+ 
+RUN pip install --no-cache-dir -r requirements.txt
