@@ -1,1 +1,4 @@
-RUN apt-get install unixodbc unixodbc-dev
+FROM ubuntu
+
+RUN apt-get update -y && \ 
+    apt-get install unixodbc unixodbc-dev
