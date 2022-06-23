@@ -1,4 +1,4 @@
-RUN sudo apt-get install unixodbc unixodbc-dev
+RUN apt-get install unixodbc unixodbc-dev
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
 RUN pip install --no-cache-dir jupyterhub
 
