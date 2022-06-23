@@ -20,7 +20,7 @@ executing==0.8.3
 fastjsonschema==2.15.3
 idna==3.3
 ipykernel==6.15.0
-ipython==8.4.0
+ipython
 ipython-genutils==0.2.0
 ipywidgets==7.7.1
 jedi==0.18.1
