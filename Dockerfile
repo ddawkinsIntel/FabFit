@@ -23,4 +23,4 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
-RUN echo ls
+RUN pip install --no-cache-dir -r requirements.txt
