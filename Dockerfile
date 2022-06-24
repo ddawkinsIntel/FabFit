@@ -11,7 +11,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
   && apt-get update \
   && apt-get install -y --no-install-recommends --allow-unauthenticated msodbcsql17 mssql-tools \
   && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile \
-  && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+  && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc -y
 
 # create user with a home directory
 ARG NB_USER
